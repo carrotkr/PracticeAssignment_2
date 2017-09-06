@@ -15,7 +15,6 @@ public class BinaryIterativeSearch implements Practice2Search {
 		while (start <= end) {
 			int mid = ((end - start) / 2) + start;
 			
-			// target is in arr[low...high] or not present.
 			if (target < arr[mid]) {
 				end = mid - 1;
 			} else if (target > arr[mid]) {
@@ -27,4 +26,5 @@ public class BinaryIterativeSearch implements Practice2Search {
 		
 		return -1;
 	}
+	
 }
